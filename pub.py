@@ -5,15 +5,16 @@ import time
 
 from paho.mqtt import client as mqtt_client
 
-broker = 'localhost'
-# broker = '192.168.253.158'
+# broker = 'localhost'
+broker = 'node1'
 port = 1883
-topic = "python/mqtt"
-# topic = "test"
-# generate client ID with pub prefix randomly
-client_id = f'python-mqtt-{random.randint(0, 1000)}'
+# topic = "python/mqtt"
+topic = "test/mqtt"
+# generate client ID with pub prefix randomly (marche pas avec MQ)
+#client_id = f'python-mqtt-{random.randint(0, 1000000)}'
+client_id = f'REXX_pub_client'
 username = 'nobody'
-password = ''
+password = 'nobody'
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):
