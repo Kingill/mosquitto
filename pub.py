@@ -13,8 +13,8 @@ topic = "test/mqtt"
 # generate client ID with pub prefix randomly (marche pas avec MQ)
 #client_id = f'python-mqtt-{random.randint(0, 1000000)}'
 client_id = f'REXX_pub_client'
-username = 'nobody'
-password = 'nobody'
+username = ''
+password = ''
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):

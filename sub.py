@@ -12,8 +12,8 @@ topic = "test/mqtt"
 # client_id = f'python-mqtt-{random.randint(0, 100)}'
 client_id = f'REXX_sub_client'
 
-username = 'nobody'
-password = 'nobody'
+username = ''
+password = ''
 
 
 def connect_mqtt() -> mqtt_client:
