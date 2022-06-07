@@ -10,7 +10,7 @@ port = 1883
 topic = "test/mqtt"
 # generate client ID with pub prefix randomly (marche pas avec MQ)
 # client_id = f'python-mqtt-{random.randint(0, 100)}'
-client_id = f'REXX_sub_client'
+client_id = f'REXX_sub_client_1'
 
 username = ''
 password = ''
